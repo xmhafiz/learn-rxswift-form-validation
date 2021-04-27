@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kc6-MU-Oug">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="AQa-cK-T4u">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Menu-->
         <scene sceneID="yOt-ih-agi">
             <objects>
                 <viewController id="xwK-aS-dhW" sceneMemberID="viewController">
@@ -17,16 +17,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Eil-80-FIj">
-                                <rect key="frame" x="152.5" y="418" width="109" height="60"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="Eil-80-FIj">
+                                <rect key="frame" x="152.5" y="406" width="109" height="84"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="st8-s2-xx4">
                                         <rect key="frame" x="0.0" y="0.0" width="109" height="30"/>
                                         <state key="normal" title="Reset Password"/>
+                                        <connections>
+                                            <segue destination="BYZ-38-t0r" kind="show" id="RXX-ir-ky7"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aqi-Xs-Av8">
-                                        <rect key="frame" x="0.0" y="30" width="109" height="30"/>
+                                        <rect key="frame" x="0.0" y="54" width="109" height="30"/>
                                         <state key="normal" title="Sign Up"/>
+                                        <connections>
+                                            <segue destination="kc6-MU-Oug" kind="show" id="34O-Wi-TTs"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -38,10 +44,11 @@
                             <constraint firstItem="Eil-80-FIj" firstAttribute="centerX" secondItem="wAK-oV-4hZ" secondAttribute="centerX" id="i5u-mH-WZS"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Menu" id="bCi-DB-Ga0"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7WT-V0-3oG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1230" y="396"/>
+            <point key="canvasLocation" x="-320.28985507246381" y="395.75892857142856"/>
         </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="w64-5n-Hwt">
@@ -52,7 +59,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="7l8-n9-ei8">
-                                <rect key="frame" x="24" y="68" width="366" height="288"/>
+                                <rect key="frame" x="24" y="112" width="366" height="288"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign Up" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="edC-4W-amb">
                                         <rect key="frame" x="0.0" y="0.0" width="366" height="24"/>
@@ -109,6 +116,7 @@
                             <constraint firstItem="m5W-At-iyw" firstAttribute="trailing" secondItem="7l8-n9-ei8" secondAttribute="trailing" constant="24" id="z7e-zC-hLS"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="nwz-Su-nGh"/>
                     <connections>
                         <outlet property="emailTextField" destination="3U2-1N-98K" id="elH-Yn-vnb"/>
                         <outlet property="nameTextField" destination="CjF-Ih-BHT" id="HAD-tJ-Gdy"/>
@@ -118,7 +126,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kUx-dY-3FZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-239" y="758"/>
+            <point key="canvasLocation" x="671.01449275362324" y="757.36607142857144"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -129,7 +137,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="UZq-8c-Pbf">
-                                <rect key="frame" x="24" y="68" width="366" height="156"/>
+                                <rect key="frame" x="24" y="112" width="366" height="156"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reset Password" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VH3-BL-TFa">
                                         <rect key="frame" x="0.0" y="0.0" width="366" height="24"/>
@@ -170,6 +178,7 @@
                             <constraint firstItem="UZq-8c-Pbf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="zcx-tI-fyW"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="7js-ut-S3X"/>
                     <connections>
                         <outlet property="emailTextField" destination="PFO-s3-0t8" id="LES-fh-JN0"/>
                         <outlet property="submitButton" destination="441-lp-Lww" id="xCt-Wk-3CY"/>
@@ -177,7 +186,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-239" y="72"/>
+            <point key="canvasLocation" x="671.01449275362324" y="71.651785714285708"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="qiy-vZ-ivZ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="AQa-cK-T4u" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="6rX-Et-SJJ">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="xwK-aS-dhW" kind="relationship" relationship="rootViewController" id="a3e-P0-3eR"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cDe-q1-Ptq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1230.4347826086957" y="395.75892857142856"/>
         </scene>
     </scenes>
     <resources>
