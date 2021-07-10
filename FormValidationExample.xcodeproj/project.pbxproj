@@ -12,7 +12,7 @@
 		8666793726373337009BC41B /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8666793626373337009BC41B /* SignUpViewModel.swift */; };
 		8692C54F26346AEB0006708B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8692C54E26346AEB0006708B /* AppDelegate.swift */; };
 		8692C55126346AEB0006708B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8692C55026346AEB0006708B /* SceneDelegate.swift */; };
-		8692C55326346AEB0006708B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8692C55226346AEB0006708B /* ViewController.swift */; };
+		8692C55326346AEB0006708B /* ResetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8692C55226346AEB0006708B /* ResetPasswordViewController.swift */; };
 		8692C55626346AEB0006708B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8692C55426346AEB0006708B /* Main.storyboard */; };
 		8692C55826346AF00006708B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8692C55726346AF00006708B /* Assets.xcassets */; };
 		8692C55B26346AF00006708B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8692C55926346AF00006708B /* LaunchScreen.storyboard */; };
@@ -26,7 +26,7 @@
 		8692C54B26346AEB0006708B /* FormValidationExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FormValidationExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8692C54E26346AEB0006708B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8692C55026346AEB0006708B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8692C55226346AEB0006708B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8692C55226346AEB0006708B /* ResetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewController.swift; sourceTree = "<group>"; };
 		8692C55526346AEB0006708B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8692C55726346AF00006708B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8692C55A26346AF00006708B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -69,7 +69,7 @@
 			children = (
 				8692C54E26346AEB0006708B /* AppDelegate.swift */,
 				8692C55026346AEB0006708B /* SceneDelegate.swift */,
-				8692C55226346AEB0006708B /* ViewController.swift */,
+				8692C55226346AEB0006708B /* ResetPasswordViewController.swift */,
 				8666793326373320009BC41B /* SignUpViewController.swift */,
 				8666793626373337009BC41B /* SignUpViewModel.swift */,
 				8692C55426346AEB0006708B /* Main.storyboard */,
@@ -211,7 +211,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8692C55326346AEB0006708B /* ViewController.swift in Sources */,
+				8692C55326346AEB0006708B /* ResetPasswordViewController.swift in Sources */,
 				8692C54F26346AEB0006708B /* AppDelegate.swift in Sources */,
 				8666793726373337009BC41B /* SignUpViewModel.swift in Sources */,
 				8666793426373320009BC41B /* SignUpViewController.swift in Sources */,

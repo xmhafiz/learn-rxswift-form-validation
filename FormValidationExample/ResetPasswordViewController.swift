@@ -10,7 +10,7 @@ import UIKit
 import RxSwift
 import RxCocoa
 
-class ViewController: UIViewController {
+class ResetPasswordViewController: UIViewController {
     // Outlets
     // 1
     @IBOutlet weak var submitButton: UIButton!
