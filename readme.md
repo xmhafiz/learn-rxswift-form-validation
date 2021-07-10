@@ -1,6 +1,9 @@
 ## iOS Sample form validation using RxSwift
 Single and multiple fields validation for learning purposes
 
+## Medium Article
+I published detail explanation [here](https://betterprogramming.pub/form-validation-in-ios-apps-made-easy-with-rxswift-266123042bb6)
+
 ### Specification
 
 - Xcode 11+
